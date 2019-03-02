@@ -11,6 +11,20 @@ a {
     color: #86c878;
 }
 
+.btn{
+    display: inline-block;
+    min-width: 250px;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background-color: #71b862;
+    border-radius: 50px;
+}
+
 .icon-burger {
     position: relative;
     display: inline-block;
@@ -96,6 +110,10 @@ a {
     flex-shrink: 0;
 }
 
+.page-header .main-nav{
+    position: relative;
+}
+
 .page-header .main-nav ul {
     margin: 0;
     padding: 0;
@@ -109,6 +127,17 @@ a {
     padding: 0 45px;
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+.page-header .main-nav .main-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 230px;
+}
+
+.page-header .main-nav .main-menu.on{
+    display: block;
 }
 
 .page-header .main-nav .submenu-icon {
@@ -130,4 +159,18 @@ a {
     height: 53px;
     background-color: #fff;
     color: #191c19;
+}
+
+.page-header .promo-text{
+    text-align: center;
+    color: #fff;
+}
+
+.page-header .promo-text .heading{
+    margin: 0;
+    font-size: 4.8rem;
+}
+
+.page-header .promo-text .caption{
+    display: none;
 }

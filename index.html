@@ -33,11 +33,12 @@
                 <a href="#" class="logo">elbutito</a>
 
                 <nav class="main-nav">
-                    <button class="nav-toggle-btn" type="button"><span class="icon-burger"></span></button>
+                    <button class="nav-toggle-btn" type="button" data-toggle=".page-header .main-nav .main-menu">
+                        <span class="icon-burger"></span>
+                    </button>
 
                     <ul class="main-menu">
                         <li>
-
                             <a href="#">Produkty
                                 <span class="submenu-icon">
                                     <i class="fas fa-caret-down"></i>
@@ -59,7 +60,7 @@
                     <p class="heading">Buty elbutito</p>
                     <p class="caption">Dla niej i dla niego</p>
 
-                    <a href="#">Przeglądaj</a>
+                    <a href="#" class="btn">Przeglądaj</a>
                 </div>
             </div>
         </header>
@@ -225,7 +226,7 @@
             <a href="#" class="logo">elbutito</a>
             <p class="copyright">Copyright (c) 2019</p>
         </footer>
-
+        <script src="js/toggle-snippet.js"></script>
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 </html>
