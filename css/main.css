@@ -1,0 +1,15 @@
+body{
+    color: #050203;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.page-header .info-bar{
+
+}
+
+.page-header .free-delivery{
+    display: none;
+}
