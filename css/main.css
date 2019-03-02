@@ -1,15 +1,133 @@
-body{
+body {
     color: #050203;
     font-family: 'Raleway', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.page-header .info-bar{
-
+.text-green {
+    color: #86c878;
 }
 
-.page-header .free-delivery{
+.icon-burger {
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    margin-bottom: 20px;
+}
+
+.icon-burger,
+.icon-burger::before,
+.icon-burger::after {
+    background-color: #fff;
+    height: 4px;
+}
+
+.icon-burger::before,
+.icon-burger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    vertical-align: middle;
+}
+
+.icon-burger::before {
+    top: 10px;
+}
+
+.icon-burger::after {
+    top: 20px;
+}
+
+.page-header .info-bar {
+    display: flex;
+    height: 80px;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header .info-bar a {
+    font-weight: 700;
+}
+
+.page-header .info-bar .free-delivery {
     display: none;
+}
+
+.page-header .info-bar .text-green {
+    margin-right: 9px;
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+
+.page-header .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    height: 420px;
+    background-image: url(../img/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-header .logo {
+    width: 166px;
+    height: 62px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background-image: url(../img/logo.png);
+}
+
+.page-header .nav-toggle-btn {
+    width: 55px;
+    height: 55px;
+    background-color: #86c878;
+    border: 0;
+}
+
+.page-header .promo-text {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.page-header .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-header .main-nav ul a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.page-header .main-nav .submenu-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #fff;
+    height: 14px;
+    margin-top: -7px;
+}
+
+.page-header .main-nav .main-menu > li > a {
+    height: 70px;
+    background-color: #191c19;
+    color: #fff;
+}
+
+.page-header .main-nav .submenu a {
+    height: 53px;
+    background-color: #fff;
+    color: #191c19;
 }

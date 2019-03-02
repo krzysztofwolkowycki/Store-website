@@ -6,7 +6,9 @@
         <title>Strona główna - Elbutito</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900|Raleway:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/toolbox.css">
         <link rel="stylesheet" href="css/main.css">
@@ -16,128 +18,160 @@
     <body>
         <header class="page-header">
             <div class="info-bar">
-                <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 PLN</p>
-                <a href="tel:+48111222333">+48111222333</a>
-                <a href="mailto:biuro@elbutito.pl">biuro@elbutito.pl</a>
-                <div class="hero">
-                    <a href="#" class="logo">Elbutito</a>
-                    <nav>
-                        <button type="button"><span class="icon-burger"></span></button>
-                        <ul class="main-menu">
-                            <li>
-                                <a href="#">Produkty</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Buty sport</a></li>
-                                    <li><a href="#">Buty casual</a></li>
-                                    <li><a href="#">Buty zima</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">O nas</a></li>
-                            <li><a href="#">Kontakt</a></li>
-                        </ul>
-                    </nav>
-                    <div class="promo-text">
-                        <p class="heding">Buty elbutito</p>
-                        <p class="caption">Dla niej i dla niego</p>
-                        <a href="#">Przegladaj</a>
-                    </div>
+                <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 pln</p>
+
+                <a href="tel:+48500333444">
+                   <span class="text-green"> <i class="fas fa-mobile-alt"></i></span> 500 333 444
+                </a>
+
+                <a href="mailto:biuro@elbutito.pl">
+                    <span class="text-green"><i class="far fa-envelope"></i></span> biuro@elbutito.pl
+                </a>
+            </div>
+
+            <div class="hero">
+                <a href="#" class="logo">elbutito</a>
+
+                <nav class="main-nav">
+                    <button class="nav-toggle-btn" type="button"><span class="icon-burger"></span></button>
+
+                    <ul class="main-menu">
+                        <li>
+
+                            <a href="#">Produkty
+                                <span class="submenu-icon">
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </a>
+                            <!-- ul.submenu>li*3>a[href=#] -->
+                            <ul class="submenu">
+                                <li><a href="#">Buty sport</a></li>
+                                <li><a href="#">Buty casual</a></li>
+                                <li><a href="#">Buty zima</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">O Nas</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="promo-text">
+                    <p class="heading">Buty elbutito</p>
+                    <p class="caption">Dla niej i dla niego</p>
+
+                    <a href="#">Przeglądaj</a>
                 </div>
             </div>
         </header>
 
         <main>
             <div class="context-menu">
+                <!-- a[href=#]*3 -->
                 <a href="#buty-sport">Sport</a>
                 <a href="#buty-casual">Casual</a>
                 <a href="#buty-zima">Zima</a>
             </div>
+
             <section id="buty-sport" class="product-section">
                 <header class="section-header">
                     <h3 class="heading">Buty sportowe</h3>
                     <p class="caption">Idealne dla aktywnego trybu życia</p>
                 </header>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-1.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <span class="discount">-25%</span>
                         <img class="product-thumbnail" src="img/produkt-2.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
+                        <span class="regular-price">299,99 pln</span>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-3.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
-                        <span class="regular-price">299,99 PLN</span>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
             </section>
+
             <section id="buty-casual" class="product-section">
                 <header class="section-header">
                     <h3 class="heading">Buty casual</h3>
                     <p class="caption">Na codzień</p>
                 </header>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-4.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <span class="discount">-25%</span>
                         <img class="product-thumbnail" src="img/produkt-5.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
+                        <span class="regular-price">299,99 pln</span>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-6.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
-                        <span class="regular-price">299,99 PLN</span>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
             </section>
-            <section id="buty-casual" class="product-section">
+
+            <section id="buty-zimowe" class="product-section">
                 <header class="section-header">
                     <h3 class="heading">Buty zimowe</h3>
                     <p class="caption">Już nigdy nie zmarzniesz</p>
                 </header>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-7.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <span class="discount">-25%</span>
                         <img class="product-thumbnail" src="img/produkt-8.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
+                        <strong class="product-price">199,99 pln</strong>
+                        <span class="regular-price">299,99 pln</span>
                     </article>
                 </a>
+
                 <a href="#">
                     <article class="product">
                         <img class="product-thumbnail" src="img/produkt-9.jpg" alt="">
                         <h2 class="product-name">Buty niebieskie sport</h2>
-                        <strong class="product-price">199,99 PLN</strong>
-                        <span class="regular-price">299,99 PLN</span>
+                        <strong class="product-price">199,99 pln</strong>
                     </article>
                 </a>
             </section>
+
+            <!-- div.pagination>a[href=#]*6 -->
             <div class="pagination">
                 <a href="#">&lt;</a>
                 <a href="#">1</a>
@@ -147,47 +181,51 @@
                 <a href="#">&gt;</a>
             </div>
         </main>
+
         <footer>
-            <section class="link-section">
-                <h6 class="section-heading">Informacje</h6>
-                <ul class="links-list">
+            <section class="links-section">
+                <h5 class="section-heading">Informacje</h5>
+
+                <ul class="links">
                     <li><a href="#">Opcje dostawy</a></li>
                     <li><a href="#">Zwroty i reklamacje</a></li>
                     <li><a href="#">Polityka prywatnosci</a></li>
                     <li><a href="#">O nas</a></li>
                 </ul>
             </section>
-            
-            <section class="link-section">
-                
-                <ul class="links-list">
+
+            <!-- section.links-section*3>h5.section-heading+ul.links>li*3>a[href=#] -->
+            <section class="links-section">
+                <ul class="links">
                     <li><a href="#">Jak zamawiać</a></li>
                     <li><a href="#">Regulamin sklepu</a></li>
                     <li><a href="#">Odstąpienie od umowy</a></li>
                 </ul>
             </section>
-            
-            <section class="link-section">
-                <h6 class="section-heading"></h6>
-                <ul class="links-list">
+
+            <section class="links-section">
+                <h5 class="section-heading">Produkty</h5>
+                <ul class="links">
                     <li><a href="#">Buty sportowe</a></li>
                     <li><a href="#">Buty eleganckie</a></li>
                     <li><a href="#">Buty zimowe</a></li>
                 </ul>
             </section>
-            
-            <section class="link-section">
-                <h6 class="section-heading"></h6>
-                <ul class="links-list">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Linked</a></li>
-                    <li><a href="#">Google+</a></li>
+
+            <section class="links-section">
+                <h5 class="section-heading">Social media</h5>
+                <ul class="links">
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">linked-in</a></li>
+                    <li><a href="#">google +</a></li>
                 </ul>
             </section>
+
             <a href="#" class="logo">elbutito</a>
-            <p class="copyright">Copyright (C) 2019</p>
+            <p class="copyright">Copyright (c) 2019</p>
         </footer>
+
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 </html>
