@@ -346,3 +346,98 @@ a {
     position:relative;
     z-index: 10;
 }
+
+.pagination{
+    margin: 55px 10px 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a{
+    margin-left: -2px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 2px solid #e6e6e6;
+    transition: border .15s ease-out;
+}
+
+.pagination a:hover{
+    position: relative;
+    border-color: #86c878;
+    z-index: 10;
+}
+
+.pagination a:nth-child(2){
+    margin-left: 0;
+}
+
+.pagination a:first-child{
+    margin-right: 30px;
+}
+
+.pagination a:last-child{
+    margin-left: 30px;
+}
+
+.page-footer{
+    padding: 65px 20px 0;
+    background-color: #191c19;
+}
+
+.page-footer .top-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.page-footer .links-section{
+    margin: 0 20px 40px;
+    min-width: 130px;
+}
+
+
+.page-footer .links-section.no-heading{
+    padding-top: 50px;
+}
+
+
+.page-footer .links-section .section-heading{
+    margin: 0 0 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #86c878;
+}
+
+.page-footer .links-section .links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer .links-section .links li{
+    margin-bottom: 5px;
+}
+
+.page-footer .links-section .links li:last-child{
+    margin-bottom: 0px;
+}
+
+.page-footer .links-section .links a{
+    font-size: 1.2rem;
+    color: #6b6d6b;
+}
+
+
+.page-footer .links-section .social-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer .links-section .social-links a{
+    color: #fff;
+    font-size: 1.8rem;
+}
