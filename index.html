@@ -17,19 +17,21 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="info-bar">
-                <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 pln</p>
-
-                <a href="tel:+48500333444">
-                   <span class="text-green"> <i class="fas fa-mobile-alt"></i></span> 500 333 444
-                </a>
-
-                <a href="mailto:biuro@elbutito.pl">
-                    <span class="text-green"><i class="far fa-envelope"></i></span> biuro@elbutito.pl
-                </a>
+            <div class="info-bar-wrapper">
+                <div class="info-bar">
+                    <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 pln</p>
+                
+                    <a href="tel:+48500333444">
+                       <span class="text-green icon"><i class="fas fa-mobile-alt"></i></span> 500 333 444
+                    </a>
+                
+                    <a href="mailto:biuro@elbutito.pl">
+                        <span class="text-green icon"><i class="far fa-envelope"></i></span> biuro@elbutito.pl
+                    </a>
+                </div>
             </div>
 
-            <div class="hero">
+            <div class="hero center-wrapper">
                 <a href="#" class="logo">elbutito</a>
 
                 <nav class="main-nav">
@@ -39,20 +41,60 @@
 
                     <ul class="main-menu">
                         <li>
-                            <a href="#">Produkty
+                            <a href="#" 
+                                class="has-submenu" 
+                                data-toggle=".page-header .main-nav .submenu-produkty"
+                                data-toggle-hide-before=".page-header .main-nav .submenu"
+                            >
+                                Produkty
+
                                 <span class="submenu-icon">
                                     <i class="fas fa-caret-down"></i>
                                 </span>
                             </a>
                             <!-- ul.submenu>li*3>a[href=#] -->
-                            <ul class="submenu">
+                            <ul class="submenu submenu-produkty">
                                 <li><a href="#">Buty sport</a></li>
                                 <li><a href="#">Buty casual</a></li>
                                 <li><a href="#">Buty zima</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">O Nas</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li>
+                            <a href="#" class="has-submenu" 
+                            data-toggle=".page-header .main-nav .submenu-onas"
+                            data-toggle-hide-before=".page-header .main-nav .submenu">
+                                O Nas
+
+                                <span class="submenu-icon">
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </a>
+
+                            <ul class="submenu submenu-onas">
+                                <li><a href="#">Buty sport</a></li>
+                                <li><a href="#">Buty casual</a></li>
+                                <li><a href="#">Buty zima</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="has-submenu" 
+                            data-toggle=".page-header .main-nav .submenu-kontakt"
+                            data-toggle-hide-before=".page-header .main-nav .submenu">
+                                Kontakt
+
+                                <span class="submenu-icon">
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </a>
+
+                            <ul class="submenu submenu-kontakt">
+                                <li><a href="#">Buty sport</a></li>
+                                <li><a href="#">Buty casual</a></li>
+                                <li><a href="#">Buty zima</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#">O Nas</a></li>
+                        <li><a href="#">Kontakt</a></li> -->
                     </ul>
                 </nav>
 
@@ -65,7 +107,7 @@
             </div>
         </header>
 
-        <main class="font-monterrat">
+        <main class="page-content font-monterrat">
             <div class="context-menu">
                 <!-- a[href=#]*3 -->
                 <a href="#buty-sport">Sport</a>
