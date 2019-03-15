@@ -15,6 +15,16 @@ a {
     color: #86c878;
 }
 
+.logo {
+    display: inline-block;
+    width: 166px;
+    height: 62px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+}
+
 .btn{
     display: inline-block;
     min-width: 250px;
@@ -140,14 +150,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-.page-header .logo {
-    width: 166px;
-    height: 62px;
-    text-indent: 9999px;
-    overflow: hidden;
-    background-image: url(../img/logo.png);
 }
 
 .page-header .nav-toggle-btn {
@@ -383,14 +385,36 @@ a {
 }
 
 .page-footer{
-    padding: 65px 20px 0;
+    padding: 65px 0 0;
     background-color: #191c19;
+    color: #6b6d6b;
+}
+
+.page-footer .divider{
+    margin: 0 0 25px;
+    height: 1px;
+    background-color: #303430;
+    border: 0;
+}
+
+.page-footer .footer-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .page-footer .top-wrapper{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+}
+
+.page-footer .bottom-wrapper{
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.poge-footer .copyright{
+    margin: 0;
 }
 
 .page-footer .links-section{
@@ -398,8 +422,7 @@ a {
     min-width: 130px;
 }
 
-
-.page-footer .links-section.no-heading{
+.page-footer .links-section .no-heading{
     padding-top: 50px;
 }
 
@@ -428,7 +451,6 @@ a {
 
 .page-footer .links-section .links a{
     font-size: 1.2rem;
-    color: #6b6d6b;
 }
 
 
@@ -440,4 +462,9 @@ a {
 .page-footer .links-section .social-links a{
     color: #fff;
     font-size: 1.8rem;
+}
+
+.page-footer .logo{
+    width: 102px;
+    height: 38px;
 }
