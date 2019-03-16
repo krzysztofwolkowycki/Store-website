@@ -18,7 +18,7 @@
     <body>
         <header class="page-header">
             <div class="info-bar-wrapper">
-                <div class="info-bar center-wrapper">
+                <div class="info-bar content-offset center-wrapper">
                     <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 pln</p>
                 
                     <a href="tel:+48500333444">
@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="hero center-wrapper">
+            <div class="hero content-offset center-wrapper">
                 <a href="#" class="logo">elbutito</a>
 
                 <nav class="main-nav">
@@ -103,29 +103,90 @@
             </div>
         </header>
 
-        <main class="page-content center-wrapper font-montserrat">
-            <div class="context-menu">
-                <!-- a[href=#]*3 -->
-                <a href="#buty-sport">Sport</a>
-                <a href="#buty-casual">Casual</a>
-                <a href="#buty-zima">Zima</a>
-            </div>
-
-            <section id="buty-sport" class="product-section">
-                <div class="products-grid">
+        <main class="page-content font-montserrat">
+            <div class="center-wrapper">
+                <div class="context-menu">
+                    <!-- a[href=#]*3 -->
+                    <a href="#buty-sport">Sport</a>
+                    <a href="#buty-casual">Casual</a>
+                    <a href="#buty-zimowe">Zima</a>
+                </div>
+                
+                <section id="buty-sport" class="product-section">
+                    <div class="products-grid">
+                        <div class="product-grid-cell">
+                            <header class="section-header green">
+                                <h3 class="heading">Buty sportowe</h3>
+                                <p class="caption">Idealne dla aktywnego trybu życia</p>
+                            </header>
+                        </div>
+                        
+                        <div class="product-grid-cell">
+                            <a href="#">
+                                <article class="product">
+                                    <div class="product-thumbnail">
+                                        <div class="img-wrapper">
+                                            <img src="img/produkt-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-details-wrapper">
+                                        <h2 class="product-name">Buty niebieskie sport</h2>
+                                        <strong class="product-price">199,99 pln</strong>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        
+                        <div class="product-grid-cell">
+                            <a href="#">
+                                <article class="product">
+                                    <div class="product-thumbnail">
+                                        <span class="discount"><span class="text">-25%</span></span>
+                                        <div class="img-wrapper">
+                                            <img src="img/produkt-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-details-wrapper">
+                                        <h2 class="product-name">Buty niebieskie sport</h2>
+                                        <strong class="product-price">199,99 pln</strong>
+                                        <span class="regular-price">299,99 pln</span>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        
+                        <div class="product-grid-cell">
+                            <a href="#">
+                                <article class="product last">
+                                    <div class="product-thumbnail">
+                                        <div class="img-wrapper">
+                                            <img src="img/produkt-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-details-wrapper">
+                                        <h2 class="product-name">Buty niebieskie sport</h2>
+                                        <strong class="product-price">199,99 pln</strong>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="buty-casual" class="product-section products-grid">
                     <div class="product-grid-cell">
-                        <header class="section-header green">
-                            <h3 class="heading">Buty sportowe</h3>
-                            <p class="caption">Idealne dla aktywnego trybu życia</p>
+                        <header class="section-header turquoise">
+                            <h3 class="heading">Buty casual</h3>
+                            <p class="caption">Na codzień</p>
                         </header>
                     </div>
-                    
+                
                     <div class="product-grid-cell">
                         <a href="#">
                             <article class="product">
                                 <div class="product-thumbnail">
                                     <div class="img-wrapper">
-                                        <img src="img/produkt-1.jpg" alt="">
+                                        <img src="img/produkt-4.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="product-details-wrapper">
@@ -135,14 +196,14 @@
                             </article>
                         </a>
                     </div>
-                    
+                
                     <div class="product-grid-cell">
                         <a href="#">
                             <article class="product">
                                 <div class="product-thumbnail">
                                     <span class="discount"><span class="text">-25%</span></span>
                                     <div class="img-wrapper">
-                                        <img src="img/produkt-2.jpg" alt="">
+                                        <img src="img/produkt-5.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="product-details-wrapper">
@@ -153,13 +214,13 @@
                             </article>
                         </a>
                     </div>
-                    
+                
                     <div class="product-grid-cell">
                         <a href="#">
                             <article class="product last">
                                 <div class="product-thumbnail">
                                     <div class="img-wrapper">
-                                        <img src="img/produkt-3.jpg" alt="">
+                                        <img src="img/produkt-6.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="product-details-wrapper">
@@ -169,135 +230,76 @@
                             </article>
                         </a>
                     </div>
-                </div>
-            </section>
-
-            <section id="buty-casual" class="product-section products-grid">
-                <div class="product-grid-cell">
-                    <header class="section-header turquoise">
-                        <h3 class="heading">Buty casual</h3>
-                        <p class="caption">Na codzień</p>
-                    </header>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product">
-                            <div class="product-thumbnail">
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-4.jpg" alt="">
+                </section>
+                
+                <section id="buty-zimowe" class="product-section products-grid">
+                    <div class="product-grid-cell">
+                        <header class="section-header dark-blue">
+                            <h3 class="heading">Buty zimowe</h3>
+                            <p class="caption">Już nigdy nie zmarzniesz</p>
+                        </header>
+                    </div>
+                
+                    <div class="product-grid-cell">
+                        <a href="#">
+                            <article class="product">
+                                <div class="product-thumbnail">
+                                    <div class="img-wrapper">
+                                        <img src="img/produkt-7.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product">
-                            <div class="product-thumbnail">
-                                <span class="discount"><span class="text">-25%</span></span>
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-5.jpg" alt="">
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                                <span class="regular-price">299,99 pln</span>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product last">
-                            <div class="product-thumbnail">
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-6.jpg" alt="">
+                            </article>
+                        </a>
+                    </div>
+                
+                    <div class="product-grid-cell">
+                        <a href="#">
+                            <article class="product">
+                                <div class="product-thumbnail">
+                                    <span class="discount"><span class="text">-25%</span></span>
+                                    <div class="img-wrapper">
+                                        <img src="img/produkt-8.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </section>
-
-            <section id="buty-zimowe" class="product-section products-grid">
-                <div class="product-grid-cell">
-                    <header class="section-header dark-blue">
-                        <h3 class="heading">Buty zimowe</h3>
-                        <p class="caption">Już nigdy nie zmarzniesz</p>
-                    </header>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product">
-                            <div class="product-thumbnail">
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-7.jpg" alt="">
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
+                                    <span class="regular-price">299,99 pln</span>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product">
-                            <div class="product-thumbnail">
-                                <span class="discount"><span class="text">-25%</span></span>
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-8.jpg" alt="">
+                            </article>
+                        </a>
+                    </div>
+                
+                    <div class="product-grid-cell">
+                        <a href="#">
+                            <article class="product">
+                                <div class="product-thumbnail">
+                                    <div class="img-wrapper">
+                                        <img src="img/produkt-9.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                                <span class="regular-price">299,99 pln</span>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="product-grid-cell">
-                    <a href="#">
-                        <article class="product">
-                            <div class="product-thumbnail">
-                                <div class="img-wrapper">
-                                    <img src="img/produkt-9.jpg" alt="">
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
                                 </div>
-                            </div>
-                            <div class="product-details-wrapper">
-                                <h2 class="product-name">Buty niebieskie sport</h2>
-                                <strong class="product-price">199,99 pln</strong>
-                            </div>
-                        </article>
-                    </a>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- div.pagination>a[href=#]*6 -->
+                <div class="pagination">
+                    <a href="#">&lt;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">&gt;</a>
                 </div>
-            </section>
-
-            <!-- div.pagination>a[href=#]*6 -->
-            <div class="pagination">
-                <a href="#">&lt;</a>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">&gt;</a>
             </div>
         </main>
 
