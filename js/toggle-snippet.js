@@ -13,6 +13,14 @@
         var hideBeforeSelector = this.getAttribute('data-toggle-hide-before');
         var $targets = document.querySelectorAll(targetSelector);
         var toggleClass = this.getAttribute('data-toggle-class')||'on';
+        var targets = [];
+
+        each($targets, function ($el) {
+            targets.push({
+                $target: $el,
+                state: $el.classList.contains(toggleClass)
+            });
+        });
 
         if (hideBeforeSelector) {
             var $hideBeforeTargets = document.querySelectorAll(hideBeforeSelector);
@@ -22,16 +30,16 @@
             });
         }
 
-        each($targets, function ($el) {
-            $el.classList.toggle(toggleClass);
+        each(targets, function (details) {
+            if (details.state) {
+                details.$target.classList.remove(toggleClass);
+            } else {
+                details.$target.classList.add(toggleClass);
+            }
         });
     };
 
     each($btns, function ($btn) {
         $btn.addEventListener('click', onBtnClick, false);
     });
-
-    for (i = 0; i < btnsLength; i++) {
-        
-    }
 })();

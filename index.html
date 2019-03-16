@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900|Raleway:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:300,700,900|Raleway:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/toolbox.css">
@@ -18,11 +18,11 @@
     <body>
         <header class="page-header">
             <div class="info-bar-wrapper">
-                <div class="info-bar">
+                <div class="info-bar center-wrapper">
                     <p class="free-delivery"><span class="text-green">Darmowa dostawa</span> od 200 pln</p>
                 
                     <a href="tel:+48500333444">
-                       <span class="text-green icon"><i class="fas fa-mobile-alt"></i></span> 500 333 444
+                        <span class="text-green icon"><i class="fas fa-mobile-alt"></i></span> 500 333 444
                     </a>
                 
                     <a href="mailto:biuro@elbutito.pl">
@@ -60,9 +60,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="has-submenu" 
-                            data-toggle=".page-header .main-nav .submenu-onas"
-                            data-toggle-hide-before=".page-header .main-nav .submenu">
+                            <a href="#" class="has-submenu" data-toggle=".page-header .main-nav .submenu-onas" data-toggle-hide-before=".page-header .main-nav .submenu">
                                 O Nas
 
                                 <span class="submenu-icon">
@@ -77,9 +75,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="has-submenu" 
-                            data-toggle=".page-header .main-nav .submenu-kontakt"
-                            data-toggle-hide-before=".page-header .main-nav .submenu">
+                            <a href="#" class="has-submenu" data-toggle=".page-header .main-nav .submenu-kontakt" data-toggle-hide-before=".page-header .main-nav .submenu">
                                 Kontakt
 
                                 <span class="submenu-icon">
@@ -102,12 +98,12 @@
                     <p class="heading">Buty elbutito</p>
                     <p class="caption">Dla niej i dla niego</p>
 
-                    <a href="#" class="btn">Przeglądaj</a>
+                    <a class="btn" href="#">Przeglądaj</a>
                 </div>
             </div>
         </header>
 
-        <main class="page-content font-monterrat">
+        <main class="page-content font-montserrat">
             <div class="context-menu">
                 <!-- a[href=#]*3 -->
                 <a href="#buty-sport">Sport</a>
@@ -116,48 +112,58 @@
             </div>
 
             <section id="buty-sport" class="product-section">
-                <header class="section-header green">
-                    <h3 class="heading">Buty sportowe</h3>
-                    <p class="caption">Idealne dla aktywnego trybu życia</p>
-                </header>
-
-                <a href="#">
-                    <article class="product">
-                        <div class="product-thumbnail">
-                            <img src="img/produkt-1.jpg" alt="">
-                        </div>
-                        <div class="product-details-wrapper">
-                            <h2 class="product-name">Buty niebieskie sport</h2>
-                            <strong class="product-price">199,99 pln</strong>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#">
-                    <article class="product">
-                        <div class="product-thumbnail">
-                            <span class="discount"><span class="text">-25%</span></span>
-                            <img src="img/produkt-2.jpg" alt="">
-                        </div>
-                        <div class="product-details-wrapper">
-                            <h2 class="product-name">Buty niebieskie sport</h2>
-                            <strong class="product-price">199,99 pln</strong>
-                            <span class="regular-price">299,99 pln</span>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#">
-                    <article class="product last">
-                        <div class="product-thumbnail">
-                            <img src="img/produkt-3.jpg" alt="">
-                        </div>
-                        <div class="product-details-wrapper">
-                            <h2 class="product-name">Buty niebieskie sport</h2>
-                            <strong class="product-price">199,99 pln</strong>
-                        </div>
-                    </article>
-                </a>
+                <div class="products-grid">
+                    <div class="products-grid-cell">
+                        <header class="section-header green">
+                            <h3 class="heading">Buty sportowe</h3>
+                            <p class="caption">Idealne dla aktywnego trybu życia</p>
+                        </header>
+                    </div>
+                    
+                    <div class="products-grid-cell">
+                        <a href="#">
+                            <article class="product">
+                                <div class="product-thumbnail">
+                                    <img src="img/produkt-1.jpg" alt="">
+                                </div>
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    
+                    <div class="products-grid-cell">
+                        <a href="#">
+                            <article class="product">
+                                <div class="product-thumbnail">
+                                    <span class="discount"><span class="text">-25%</span></span>
+                                    <img src="img/produkt-2.jpg" alt="">
+                                </div>
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
+                                    <span class="regular-price">299,99 pln</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    
+                    <div class="products-grid-cell">
+                        <a href="#">
+                            <article class="product last">
+                                <div class="product-thumbnail">
+                                    <img src="img/produkt-3.jpg" alt="">
+                                </div>
+                                <div class="product-details-wrapper">
+                                    <h2 class="product-name">Buty niebieskie sport</h2>
+                                    <strong class="product-price">199,99 pln</strong>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
             </section>
 
             <section id="buty-casual" class="product-section">
@@ -194,9 +200,9 @@
 
                 <a href="#">
                     <article class="product last">
-                       <div class="product-thumbnail">
+                        <div class="product-thumbnail">
                             <img src="img/produkt-6.jpg" alt="">
-                       </div>
+                        </div>
                         <div class="product-details-wrapper">
                             <h2 class="product-name">Buty niebieskie sport</h2>
                             <strong class="product-price">199,99 pln</strong>
@@ -302,15 +308,17 @@
                     </ul>
                 </section>
             </div>
-            
+
             <hr class="divider">
-            
+
             <div class="footer-content-wrapper bottom-wrapper">
                 <a href="#" class="logo">elbutito</a>
                 <p class="copyright">Copyright (c) 2019</p>
             </div>
         </footer>
+
         <script src="js/toggle-snippet.js"></script>
+
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 </html>

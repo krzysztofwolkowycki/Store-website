@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 
-.center-wrapper{
+.center-wrapper {
     width: 100%;
     max-width: 1360px;
     margin-left: auto;
@@ -165,7 +165,9 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
-    height: 420px;
+    min-height: 420px;
+    height: 50vw;
+    max-height: 670px;
     background-image: url(../img/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,13 +247,15 @@ a {
 
 .page-header .promo-text .heading {
     margin: 0 0 15px;
+    font-family: 'Playfair Display', serif;
     font-size: 4.8rem;
 }
 
 .page-header .promo-text .caption {
     display: none;
 }
-.page-content{
+
+.page-content {
     overflow: auto;
     margin-top: -135px;
     padding-top: 150px;
@@ -493,7 +497,8 @@ a {
 
 
 
-@media screen and (min-width: 45.00em) {
+/* 720px */
+@media screen and (min-width: 45.000em) {
     .page-header .info-bar {
         justify-content: flex-end;
     }
@@ -507,33 +512,54 @@ a {
         margin-right: auto;
         text-transform: uppercase;
     }
+
+    .page-header .hero {
+        min-height: 550px;
+    }
+
+    .page-header .promo-text .heading {
+        font-size: 10.8rem;
+    }
+
+    .page-header .promo-text .caption {
+        display: block;
+        margin: 30px 0 35px;
+        font-size: 3rem;
+    }
 }
 
+/* 768px */
 @media screen and (min-width: 48.000em) {
     .page-header .nav-toggle-btn {
         display: none;
     }
 
-    .page-header .main-nav .main-menu {
+    .page-header .main-nav .main-menu,
+    .page-header .main-nav .main-menu.on {
         display: flex;
         white-space: nowrap;
     }
 
     .page-header .main-nav .submenu {
         display: none;
+
         position: absolute;
-        background-color: #fff;
+        background: white;
         /*padding-top: 35px;
         padding-bottom: 50px;
-        padding-left: 40px;
-        padding-right: 50px;*/
+        padding-left: 25px;
+        padding-right: 25px;*/
         padding: 35px 25px 50px;
     }
-    .page-header .main-nav .submenu.on{
+
+    .page-header .main-nav .submenu.on {
         display: block;
     }
 
-    .page-header .main-nav .submenu >
+    .page-header .main-nav .main-menu > li:first-child .submenu {
+        padding-left: 40px;
+        padding-right: 45px;
+    }
 
     .page-header .main-nav .submenu li {
         margin-bottom: 13px;
@@ -565,8 +591,24 @@ a {
     }
 }
 
-@media screen and (min-width: 51.250em){
-    .page-header .hero{
+/* 820px */
+@media screen and (min-width: 51.250em) {
+    .page-header .hero {
         background-image: url(../img/hearo-bg-desktop.jpg);
+    }
+    .products-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .products-grid-cell{
+        width: 50%;
+        flex-shrink: 0;
+    }
+}
+
+/* 1200px */
+@media screen and (min-width: 75.000em) {
+    .page-header .promo-text {
+        margin-bottom: 120px;
     }
 }
