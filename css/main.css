@@ -524,6 +524,10 @@ a {
 }
 
 
+.sidebar{
+    display: none;
+}
+
 /* 620px */
 @media screen and (min-width: 38.750em) {
     .page-footer .footer-grid-cell {
