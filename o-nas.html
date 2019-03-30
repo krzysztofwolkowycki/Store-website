@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>O nas - Elbutito</title>
+        <title>Kontakt - Elbutito</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -108,65 +108,172 @@
                 <div class="sidebar-layout">
                     <aside class="sidebar">
                         <ul class="sidebar-nav">
-                            <li><a href="#o-sklepie">O sklepie</a></li>
-                            <li><a href="#nasze-produkty">Nasze produkty</a></li>
-                            <li><a href="#najczestrze-pytania">Najczęstsze pytania</a></li>
+                            <li><a href="#dane-kontaktowe">Dane kontaktowe</a></li>
+                            <li><a href="#formularz-kontaktowy">Formularz kontaktowy</a></li>
+                            <li><a href="#jak-dojechac">Jak dojechać</a></li>
                         </ul>
                     </aside>
                     
                     <article class="content">
-                        <h2>O nas</h2>
-                        <h3 id="o-sklepie">O sklepie</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="stic-screen">
-                            <div class="mozaic">
-                                <img src="img/backpack-690223_1920.jpg" alt="Plecak podróżny">
-                                <img src="img/footwear-1837091_1920.jpg" alt="Buty podróżne">
+                        <h2>Kontakt</h2>
+                    
+                        <h3 id="dane-kontaktowe">Dane kontaktowe</h3>
+                    
+                        <p>
+                            <strong>Elbutito - online shop</strong> <br>
+                            ul. Handlowa 1 <br>
+                            15-399 Białystok
+                        </p>
+                    
+                        <p>
+                            Infolinia: <a href="tel:85123123123"><strong class="text-red">(85) 123 123 123</strong></a> <br>
+                            e-mail: <a href="mailto:biuro@elbutito.eu"><strong class="text-green">biuro@elbutito.eu</strong></a>
+                        </p>
+                    
+                        <p>
+                            <strong>Zapraszamy codziennie od 8:00 do 17:00</strong>
+                        </p>
+                    
+                    
+                    
+                        <h3 id="formularz-kontaktowy">Formularz kontaktowy</h3>
+                    
+                        <form class="form" action="" method="POST">
+                            <div class="form-row">
+                                <label for="contact-name" class="form-label required">Imię i nazwisko</label>
+                    
+                                <div class="form-control-wrapper">
+                                    <input id="contact-name" name="contact[name]" type="text" class="form-control">
+                                    
+                                    <ul class="form-errors">
+                                        <li>Podane pole jest wymagane</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <label for="contact-email" class="form-label required">E-mail</label>
+                    
+                                <div class="form-control-wrapper">
+                                    <input id="contact-email" name="contact[email]" type="email" class="form-control">
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <label for="contact-tel" class="form-label">Telefon</label>
+                    
+                                <div class="form-control-wrapper">
+                                    <input id="contact-tel" name="contact[tel]" type="tel" class="form-control" placeholder="+48 500 100 200">
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <label for="contact-subject" class="form-label required">Powód kontaktu</label>
+                    
+                                <div class="form-control-wrapper">
+                                    <select name="contact[subject]" id="contact-subject" class="form-control">
+                                        <option value="">wybierz</option>
+                                        <option value="v1">Opcja 1</option>
+                                        <option value="v2">Opcja 2</option>
+                                        <option value="v3">Opcja 3</option>
+                                        <option value="v4">Opcja 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <span class="form-label required">Czy jesteś naszym klientem</span>
+                    
+                                <div class="form-control-wrapper form-checkbox-grid">
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-client-1" type="radio" name="contact[client]" value="1">
+                                        <label for="contact-client-1"><span class="form-control"></span>tak</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-client-2" type="radio" name="contact[client]" value="0">
+                                        <label for="contact-client-2"><span class="form-control"></span>nie</label>
+                                    </div>
+                    
+                                    <ul class="form-errors">
+                                        <li>Podane pole jest wymagane</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <span class="form-label required">Preferowany dzień kontaktu</span>
+                    
+                                <div class="form-control-wrapper form-checkbox-grid grid-col2">
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-1" type="checkbox" name="contact[prefday]" value="mon">
+                                        <label for="contact-prefday-1"><span class="form-control"></span>poniedziałek</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-2" type="checkbox" name="contact[prefday]" value="tue">
+                                        <label for="contact-prefday-2"><span class="form-control"></span>wtorek</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-3" type="checkbox" name="contact[prefday]" value="wed">
+                                        <label for="contact-prefday-3"><span class="form-control"></span>środa</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-4" type="checkbox" name="contact[prefday]" value="thu">
+                                        <label for="contact-prefday-4"><span class="form-control"></span>czwartek</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-5" type="checkbox" name="contact[prefday]" value="fri">
+                                        <label for="contact-prefday-5"><span class="form-control"></span>piątek</label>
+                                    </div>
+                    
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-prefday-6" type="checkbox" name="contact[prefday]" value="sat">
+                                        <label for="contact-prefday-6"><span class="form-control"></span>sobota</label>
+                                    </div>
+                    
+                                    <ul class="form-errors">
+                                        <li>Podane pole jest wymagane</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <label for="contact-message" class="form-label required">Wiadomość</label>
+                    
+                                <div class="form-control-wrapper">
+                                    <textarea name="contact[message]" id="contact-message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row">
+                                <div class="form-control-wrapper">
+                                    <div class="form-checkbox-wrapper">
+                                        <input id="contact-rules" type="checkbox" name="contact[rules]" value="1">
+                                        <label for="contact-rules"><span class="form-control"></span>Zgadzam się z regulaminem serwisu</label>
+                                    </div>
+                    
+                                    <ul class="form-errors">
+                                        <li>Podane pole jest wymagane</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div class="form-row form-submit-row">
+                                <button type="submit" class="btn">Wyślij</button>
+                            </div>
+                        </form>
+                    
+                        <h3 id="jak-dojechac">Jak dojechać</h3>
+                    
+                        <div class="stick-screen">
+                            <div class="embed-responsive map">
+                                <iframe class="embed-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.263176967278!2d23.165949316002123!3d53.141371197745414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc18bc2e5d05%3A0x7bb834c18bd8e62a!2zV3nFvHN6YSBTemtvxYJhIEZpbmFuc8OzdyBpIFphcnrEhWR6YW5pYQ!5e0!3m2!1spl!2spl!4v1552747219633" allowfullscreen></iframe>
                             </div>
                         </div>
-
-                        <h4>Początki</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                        
-                        <blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        </blockquote>
-
-                        <h4>Obecnie</h4>
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet, consectetur </li>
-                            <li>Duis aute irure dolor in reprehenderit</li>
-                            <li>Excepteur sint occaecat cupidatat non  proident</li>
-                            <li>Quis autem vel eum iure reprehenderit qui</li>
-                            <li>Neque porro quisquam est, qui dolore  ipsum quia dolor sit amet, consectetur  adipisci velit, sed quia non numqua  eius modi tempora incidunt ut labore e  dolore magnam aliquam quaera  voluptatem. </li>
-                            <li>Ut enim ad minima veniam, quis nostru  exercitationem ullam corporis suscipi  laboriosam</li>
-                        </ol>
-                        
-                        <p class="highlighted stick-screen">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-
-                        <h4>Przyszłość</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <ul>
-                            <li> Lorem ipsum dolor sit amet, consectetur </li>
-                            <li> Duis aute irure dolor in reprehenderit</li>
-                            <li> Excepteur sint occaecat cupidatat non   proident</li>
-                            <li> Quis autem vel eum iure reprehenderit qui</li>
-                            <li> Neque porro quisquam est, qui dolorem  ipsum quia dolor sit amet, consectetur</li>
-                            <li> Ut enim ad minima veniam, quis nostrum  exercitationem ullam corporis suscipit  laboriosam</li>
-                        </ul>
-                        <h3 id="nasze-produkty">Nasze produkty</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                        <div class="stick-screen">
-                            <video src="asset/video/small.mp4" controls></video>
-                        </div>
-
-                        <h4>Tabela rozmarów</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        
-
                     </article>
                 </div>
             </div>

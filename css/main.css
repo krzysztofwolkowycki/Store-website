@@ -778,6 +778,139 @@ input[type="checkbox"]:checked + label .form-control::after {
     margin: 0 -40px;
 }
 
+
+/* style strony o nas */
+.content h4 {
+    margin: 55px 0 50px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.content ol,
+.content ul {
+    margin: 40px 0;
+    padding-left: 20px;
+}
+
+.content blockquote {
+    position: relative;
+    margin: 50px 0;
+    padding: 95px 0 45px;
+    border-top: 1px solid #86c878;
+    border-bottom: 1px solid #86c878;
+    text-align: center;
+    font-style: italic;
+}
+
+.content blockquote::before {
+    content: '\0201D';
+
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    display: block;
+    width: 42px;
+    height: 0px;
+    margin-left: -21px;
+    font-size: 13.3rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.content blockquote p {
+    margin: 0;
+}
+
+.content small {
+    font-size: 1rem;
+}
+
+.content video {
+    width: 100%;
+}
+
+.content dl {
+    margin-top: 60px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.content dl dt {
+    margin: 0 0 35px;
+    padding-top: 30px;
+    border-top: 1px solid #c1c1c1;
+    font-weight: 700;
+}
+
+.content dl dd {
+    margin: 0 0 45px;
+}
+
+.content .mozaic {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content .mozaic img:first-child {
+    width: 46.845%;
+}
+
+.content .mozaic img:last-child {
+    width: calc(100% - 46.845%);
+}
+
+.content .hl {
+    margin: 50px 0;
+    padding: 55px 50px 60px;
+    text-align: center;
+    color: white;
+    background-color: #86c878;
+}
+
+.content .table-wrapper {
+    overflow-x: auto;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content table tr:first-child th {
+    background-color: #060606;
+    color: white;
+}
+
+.content table td,
+.content table th {
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.content table tr:first-child th,
+.content table td[colspan],
+.content table .no-border td,
+.content table .no-border th {
+    border: none;
+}
+
+.content table td:not([colspan]):first-child,
+.content table th:first-child {
+    text-align: left;
+}
+
+.content table th,
+.content table td[colspan] {
+    text-transform: uppercase;
+}
+
+.content table td[colspan] {
+    background-color: #f5f5f5;
+}
+
+
 /*
  * Media Queries (przy min-width zawsze od najmniejszych do największych)
  */
@@ -899,6 +1032,10 @@ input[type="checkbox"]:checked + label .form-control::after {
 
     .content h3 {
         font-size: 3rem;
+    }
+
+    .content h4 {
+        font-size: 2.4rem;
     }
 }
 
